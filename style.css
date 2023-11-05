@@ -6,13 +6,18 @@
 }
 
 body{
-    background-color: #222;
+    background:url('./images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    
 }
 
 .card{
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg, #00feba, #5b558a);
+    background:rgba(255, 255, 255, .1);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, .2);
     color: #fff;
     margin: 100px auto 0;
     border-radius: 20px;
@@ -93,9 +98,21 @@ body{
 }
 
 .error{
-    text-align: left;
+    text-align: center;
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 20px;
     margin-top: 10px;
     display: none;
+    margin-top: 40px;
+}
+
+
+.error > img{
+    width: 50vh;
+    
+}
+
+img.weather-icon {
+    width: 20vh;
+    margin-top: 20px;
 }
